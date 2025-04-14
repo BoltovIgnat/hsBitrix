@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_CONTACT_LIST_STEXPORT_PROGRESS_SUMMARY"] = "Kontakte verarbeitet: #PROCESSED_ITEMS# von #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_COMPLETED_SUMMARY1"] = "Exportdatei der Kontakte wurde erstellt.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_COMPLETED_SUMMARY2"] = "Kontakte verarbeitet: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_DOWNLOAD"] = "Exportdatei herunterladen.";
+?>

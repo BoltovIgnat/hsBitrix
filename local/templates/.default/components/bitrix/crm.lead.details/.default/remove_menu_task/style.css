@@ -1,0 +1,27 @@
+body #crm_scope_timeline_c_lead__wait {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__activity_rest_applist {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__meeting {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__visit {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__more_button {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__whatsapp {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__gotochat {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__call {
+	display: none !important;
+}
+body #crm_scope_timeline_c_lead__todo {
+	display: none !important;
+}

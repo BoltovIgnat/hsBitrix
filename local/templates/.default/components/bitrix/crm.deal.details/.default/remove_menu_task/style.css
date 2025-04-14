@@ -1,0 +1,18 @@
+body [data-id="wait"] {
+	display: none !important;
+}
+body [data-id="activity_rest_applist"] {
+	display: none !important;
+}
+body [data-id="meeting"] {
+	display: none !important;
+}
+body [data-id="visit"] {
+	display: none !important;
+}
+body [data-id="delivery"] {
+	display: none !important;
+}
+body #crm_scope_timeline_c_deal__more_button {
+	display: none !important;
+}

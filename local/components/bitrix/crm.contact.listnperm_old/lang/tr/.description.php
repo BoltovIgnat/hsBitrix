@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_CONTACT_LIST_DESCRIPTION"] = "Kişiler";
+$MESS["CRM_CONTACT_LIST_NAME"] = "Kişiler";
+$MESS["CRM_CONTACT_NAME"] = "Kişiler";
+$MESS["CRM_NAME"] = "CRM";
+?>

@@ -1,0 +1,21 @@
+.main-buttons {
+	display: none !important;
+}
+.main-buttons.show-menu {
+	display: block !important;
+}
+.error {
+	color: #ff0000;
+}
+#content-table {
+	opacity: 0;
+}
+#content-table.active {
+	opacity: 1;
+}
+.ui-slider-page {
+	opacity: 0;
+}
+.ui-slider-page.active {
+	opacity: 1;
+}

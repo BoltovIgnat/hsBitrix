@@ -1,0 +1,62 @@
+/* Отображение кнопок завершения задачи */
+#bx-component-scope-bitrix_tasks_widget_buttonstask_6 {
+    display: none; !important;
+}
+
+/* Кнопка напоминания */
+.task-detail-sidebar-item-reminder {
+    display: none; !important;
+}
+
+/* Роботы */
+.task-detail-sidebar-item-robot {
+    display: none;
+}
+
+/* Оценка */
+.task-detail-sidebar-item-mark {
+    display: none;
+}
+
+/* Видео звонок */
+.task-detail-sidebar-item-videocall {
+    display: none;
+}
+
+/* Время */
+#task-time-switcher {
+    display: none;
+}
+
+/* Замечания */
+#task-effective-switcher {
+    display: none;
+}
+
+/* Отключить звук */
+#taskViewMute {
+    display: none;
+}
+
+/* Шестеренка */
+#taskViewPopupMenuOptions {
+    display: none;
+}
+
+/* Кнопка создать */
+#task-detail-create-button-btn {
+    display: none;
+}
+#task-detail-create-button {
+    display: none;
+}
+
+/* Теги */
+.task-detail-sidebar-info-title {
+    display: none;
+}
+
+/* Добавить теги */
+.task-dashed-link-inner {
+    display: none;
+}

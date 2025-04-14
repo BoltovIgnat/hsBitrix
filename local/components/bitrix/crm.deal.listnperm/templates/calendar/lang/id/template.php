@@ -1,0 +1,8 @@
+<?
+$MESS["CRM_DEAL_CALENDAR"] = "Tambahkan panggilan atau event";
+$MESS["CRM_DEAL_CALENDAR_TITLE"] = "Tambahkan item baru ke kalender";
+$MESS["CRM_DEAL_LIST_FILTER_NAV_BUTTON_CALENDAR"] = "Kalender";
+$MESS["CRM_DEAL_LIST_FILTER_NAV_BUTTON_KANBAN"] = "Kanban";
+$MESS["CRM_DEAL_LIST_FILTER_NAV_BUTTON_LIST"] = "Daftar";
+$MESS["CRM_DEAL_LIST_FILTER_NAV_BUTTON_WIDGET"] = "Laporan";
+?>

@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_CONTACT_LIST_STEXPORT_COMPLETED_SUMMARY1"] = "Kişi bilgileri dışa aktarma dosyası oluşturuldu.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_COMPLETED_SUMMARY2"] = "İşlenen kişiler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_DOWNLOAD"] = "Dışa aktarma dosyasını indir.";
+$MESS["CRM_CONTACT_LIST_STEXPORT_PROGRESS_SUMMARY"] = "İşlenen kişiler #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+?>

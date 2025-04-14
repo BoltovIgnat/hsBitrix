@@ -1,0 +1,185 @@
+/* Основной контейнер */
+#dashboard {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Фильтр */
+#dashboard .filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+#dashboard .filter-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+#dashboard .filter-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+#dashboard .filter-item label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dashboard .filter-item input,
+#dashboard .filter-item select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#dashboard .filter-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+#dashboard .apply-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#dashboard .apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Вкладки */
+#dashboard .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+#dashboard .tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+#dashboard .tab.active {
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Содержимое вкладок */
+#dashboard .tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+#dashboard .tab-content.active {
+    display: block;
+}
+
+/* Таблица */
+#dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#dashboard table th,
+#dashboard table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Заголовки таблицы */
+#dashboard table th {
+    background-color: #d9eaff; /* Синий оттенок */
+    color: #000; /* Черный текст */
+    font-weight: bold;
+}
+
+/* Чередование строк */
+#dashboard table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#dashboard table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Стили для строк с подразделениями */
+#dashboard table tr.department-row td{
+    background-color: #e6f7ff !important; /* Светло-голубой оттенок */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Стили для итоговых строк */
+#dashboard table tr.total-row td {
+    background-color: #d9eaff !important; /* Светло-красный оттенок */
+    font-weight: bold;
+    font-size: 15px !important;
+}
+
+/* Стили для компактности */
+#dashboard .filter-item input[type="date"],
+#dashboard .filter-item select {
+    padding: 6px;
+    font-size: 13px;
+}
+
+#dashboard .apply-button {
+    margin-left: auto;
+}
+
+/* Убрать последний отступ в фильтре */
+#dashboard .filter-container .filter-item:last-child {
+    margin-right: 0;
+}
+
+/* Стили для сортируемых заголовков */
+#details thead th {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+#details thead th.sort-asc::after {
+    content: "▲";
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+#details thead th.sort-desc::after {
+    content: "▼";
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
+}

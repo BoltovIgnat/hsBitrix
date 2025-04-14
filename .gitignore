@@ -1,0 +1,19 @@
+.idea
+*.log
+!/bitrix/components/bitrix/*.log
+/bitrix/exceptions.log.old
+*.bak
+/upload
+/bitrix/*
+/bitrix/cache
+/bitrix/managed_cache
+/bitrix/stack_cache
+/bitrix/backup
+# Убираем настройки
+/bitrix/php_interface/dbconn.*
+/bitrix/.settings.php
+/local/php_interface/crm_setting.php
+# служебные файлы
+/local/api/dbbo.chats/lib/carrotApi
+/local/api/dbbo.chats/dialog.lock
+/local/logs/*

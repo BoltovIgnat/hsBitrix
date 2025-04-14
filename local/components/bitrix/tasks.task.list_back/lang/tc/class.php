@@ -1,0 +1,15 @@
+<?php
+$MESS["TASKS_GRID_STUB_DESCRIPTION"] = "此視圖將顯示您和/或您的員工負責的任務。";
+$MESS["TASKS_GRID_STUB_NO_DATA_DESCRIPTION"] = "Try resetting the filter or change the search phrase.";
+$MESS["TASKS_GRID_STUB_NO_DATA_TITLE"] = "您的搜尋要求未返回任何結果。";
+$MESS["TASKS_GRID_STUB_PROJECT_CREATE_TASK"] = "建立任務";
+$MESS["TASKS_GRID_STUB_PROJECT_CREATE_TASK_SUBTITLE"] = "此視圖將顯示您和/或您的員工負責的任務。建立您的第一項任務，即可在此頁面上看到它。";
+$MESS["TASKS_GRID_STUB_PROJECT_PROJECT_CREATED"] = "專案已經建立";
+$MESS["TASKS_GRID_STUB_TITLE"] = "建立任務";
+$MESS["TASKS_GROUP_ACTION_DAYS_NUM_INVALID_TEXT"] = "此欄位只能包含數字。";
+$MESS["TASKS_GROUP_ACTION_DAYS_NUM_INVALID_TITLE"] = "無效的項目！";
+$MESS["TASKS_GROUP_ACTION_ERROR_MESSAGE"] = "這些任務中的 \"#MESSAGE#\"：#TASK_IDS#";
+$MESS["TASKS_GROUP_ACTION_ERROR_TITLE"] = "大量更新任務時，有存在錯誤";
+$MESS["TASKS_TL_ACCESS_TO_GROUP_DENIED"] = "您無法檢視本群組的任務清單。";
+$MESS["TASKS_TL_FORUM_MODULE_NOT_INSTALLED"] = "未安裝「論壇」模組。";
+$MESS["TASKS_TL_SOCIALNETWORK_MODULE_NOT_INSTALLED"] = "未安裝「社交網路」模組。";

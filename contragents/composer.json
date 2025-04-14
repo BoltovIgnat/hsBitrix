@@ -1,0 +1,9 @@
+{
+    "require": {
+        "chrome-php/chrome": "^1.7",
+        "hflabs/dadata": "^22.3"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    }
+}

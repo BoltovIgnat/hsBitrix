@@ -1,0 +1,11 @@
+.field-is-error {
+	border: 1px solid #ff0000 !important;
+}
+.field-is-success {
+	border: 1px solid lime !important;
+}
+.field-error {
+	display: block;
+	color: #ff0000;
+	font-size: 14px;
+}

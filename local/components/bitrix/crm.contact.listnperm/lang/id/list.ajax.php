@@ -1,0 +1,17 @@
+<?
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_COMPLETED_SUMMARY"] = "Selesai memproses data statistik untuk kontak. Kontak: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_NOT_REQUIRED_SUMMARY"] = "Tidak ada statistik kontak yang perlu diperbarui.";
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_PROGRESS_SUMMARY"] = "Kontak diproses: #PROCESSED_ITEMS# dari #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_COMPLETED_SUMMARY"] = "Duplikat kontak sudah diindeks ulang. Item diproses: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_NOT_REQUIRED_SUMMARY"] = "Indeks duplikat kontak tidak perlu dibuat ulang.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_PROGRESS_SUMMARY"] = "Kontak diproses: #PROCESSED_ITEMS# dari #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_COMPLETED_SUMMARY"] = "Indeks pencarian kontak sudah dibuat ulang. Kontak diproses: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_NOT_REQUIRED_SUMMARY"] = "Indeks pencarian kontak tidak perlu dibuat ulang.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_PROGRESS_SUMMARY"] = "Kontak diproses: #PROCESSED_ITEMS# dari #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_ROW_COUNT"] = "Total: #ROW_COUNT#";
+$MESS["CRM_CONTACT_REQUISITES_BUILD_COMPLETED_SUMMARY"] = "Detail kontak untuk kontak yang dipilih sudah dibuat. Kontak diproses: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_BUILD_PROGRESS_SUMMARY"] = "Kontak diproses: #PROCESSED_ITEMS# dari #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_COMPLETED_SUMMARY"] = "Detail kontak sudah disalin dari invois ke kontak. Kontak diproses: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_NOT_REQUIRED_SUMMARY"] = "Anda tidak perlu menyalin detail kontak dari invois ke kontak.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_PROGRESS_SUMMARY"] = "Kontak diproses: #PROCESSED_ITEMS# dari #TOTAL_ITEMS#.";
+?>

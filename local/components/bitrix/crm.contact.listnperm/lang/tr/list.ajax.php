@@ -1,0 +1,17 @@
+<?
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_COMPLETED_SUMMARY"] = "Kişiler için istatistiksel veriler işlendi. Kişiler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_NOT_REQUIRED_SUMMARY"] = "Hiçbir kişi istatistiğinin güncellenmesine gerek yok.";
+$MESS["CRM_CONTACT_LIST_REBUILD_ACT_STATISTICS_PROGRESS_SUMMARY"] = "İşlenen kişiler: #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_COMPLETED_SUMMARY"] = "Kişi kopyaları yeniden indekslendi. İşlenen ögeler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_NOT_REQUIRED_SUMMARY"] = "Kişi indeks kopyası oluşturulması gerekmiyor.";
+$MESS["CRM_CONTACT_LIST_REBUILD_DUPLICATE_INDEX_PROGRESS_SUMMARY"] = "İşlenen kişiler #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_COMPLETED_SUMMARY"] = "Kişi arama dizini yeniden oluşturuldu. İşlenen kişiler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_NOT_REQUIRED_SUMMARY"] = "Kişi arama dizininin yeniden oluşturulmasına gerek yok.";
+$MESS["CRM_CONTACT_LIST_REBUILD_SEARCH_CONTENT_PROGRESS_SUMMARY"] = "İşlenen kişiler #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_LIST_ROW_COUNT"] = "Toplam: #ROW_COUNT#";
+$MESS["CRM_CONTACT_REQUISITES_BUILD_COMPLETED_SUMMARY"] = "Seçilen kişiler için kişi ayrıntıları oluşturuldu. İşlenen kişiler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_BUILD_PROGRESS_SUMMARY"] = "İşlenen kişiler: #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_COMPLETED_SUMMARY"] = "Kişi ayrıntıları faturalardan kişilere kopyalandı. İşlenen kişiler: #PROCESSED_ITEMS#.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_NOT_REQUIRED_SUMMARY"] = "Kişi ayrıntılarını faturalardan kişilere kopyalamana gerek yok.";
+$MESS["CRM_CONTACT_REQUISITES_TRANSFER_PROGRESS_SUMMARY"] = "İşlenen kişiler: #PROCESSED_ITEMS# / #TOTAL_ITEMS#.";
+?>

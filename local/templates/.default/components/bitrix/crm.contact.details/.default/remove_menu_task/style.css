@@ -1,0 +1,12 @@
+body #crm_scope_timeline_c_contact__visit {
+	display: none !important;
+}
+body #crm_scope_timeline_c_contact__activity_rest_applist {
+	display: none !important;
+}
+body #crm_scope_timeline_c_contact__meeting {
+	display: none !important;
+}
+body #crm_scope_timeline_c_contact__more_button {
+	display: none !important;
+}

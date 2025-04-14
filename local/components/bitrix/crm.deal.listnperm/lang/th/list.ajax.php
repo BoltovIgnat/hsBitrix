@@ -1,0 +1,10 @@
+<?
+$MESS["CRM_DEAL_LIST_REBUILD_SEARCH_CONTENT_COMPLETED_SUMMARY"] = "ดัชนีการค้นหาดีลได้สร้างขึ้นใหม่แล้ว ดีลได้รับการประมวลผล: #PROCESSED_ITEMS#";
+$MESS["CRM_DEAL_LIST_REBUILD_SEARCH_CONTENT_NOT_REQUIRED_SUMMARY"] = "ดัชนีการค้นหาดีลไม่จำเป็นต้องสร้างขึ้นใหม่";
+$MESS["CRM_DEAL_LIST_REBUILD_SEARCH_CONTENT_PROGRESS_SUMMARY"] = "ดีลได้รับการประมวลผล: #PROCESSED_ITEMS# จาก #TOTAL_ITEMS#";
+$MESS["CRM_DEAL_LIST_REBUILD_SEMANTICS_NOT_REQUIRED_SUMMARY"] = "ฟิลด์ดีลบริการไม่จำเป็นต้องอัปเดต";
+$MESS["CRM_DEAL_LIST_REBUILD_STATISTICS_COMPLETED_SUMMARY"] = "สถิติดีลได้รับการอัปเดตแล้ว ดีลได้รับการประมวลผล: #PROCESSED_ITEMS#";
+$MESS["CRM_DEAL_LIST_REBUILD_STATISTICS_NOT_REQUIRED_SUMMARY"] = "ไม่มีสถิติดีลที่จำเป็นต้องอัปเดต";
+$MESS["CRM_DEAL_LIST_REBUILD_STATISTICS_PROGRESS_SUMMARY"] = "ดีลได้รับการประมวลผล: #PROCESSED_ITEMS# จาก #TOTAL_ITEMS#";
+$MESS["CRM_DEAL_LIST_ROW_COUNT"] = "ทั้งหมด: #ROW_COUNT#";
+?>

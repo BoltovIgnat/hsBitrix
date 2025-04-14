@@ -1,0 +1,47 @@
+.fired_button_wrap {
+	float:right;
+	margin-top:-22px;
+	width:300px;
+}
+.fired_buttons {
+	display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+	position:absolute;
+	right:0px;
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.1); */
+    border: 1px solid #337AB7;
+    background-color: #337AB7;
+}
+.fired_buttons .button {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    padding: 0px 5px;
+    border: 1px solid #337AB7;
+    color: #337AB7;
+    background-color: #FFF;
+    font-size: 10px;
+    line-height: 18px;
+    text-align:center;
+    font-family: Verdana, sans-serif;
+    transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+.fired_buttons .button:hover,
+.fired_buttons .button:focus {
+    flex-grow: 5;
+    color: #FFF;
+    outline: none;
+    background-color: #337AB7;
+}
+.fired_buttons .button:focus:not(:hover) {
+    flex-grow: 1;
+    background-color: #FFF;
+    color: #337AB7;
+}
+.fired_buttons .button:active {
+    transform: scale(1.2);
+    z-index: 2;
+}

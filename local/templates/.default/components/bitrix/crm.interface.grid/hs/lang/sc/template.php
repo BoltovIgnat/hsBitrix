@@ -1,0 +1,3 @@
+<?php
+$MESS["CRM_INTERFACE_GRID_DELETION_WARNING"] = "请注意，删除数据可能会导致错误的分析。";
+$MESS["CRM_INTERFACE_GRID_GO_TO_DETAILS"] = "详情";

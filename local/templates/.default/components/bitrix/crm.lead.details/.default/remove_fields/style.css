@@ -1,0 +1,9 @@
+body .crm-entity-stream-container {
+	display: none !important;
+}
+body [data-id="tab_event"] {
+	display: none !important;
+}
+body [data-cid="products"] {
+	display: none !important;
+}

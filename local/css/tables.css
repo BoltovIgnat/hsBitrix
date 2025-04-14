@@ -1,0 +1,48 @@
+.simpleTable {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    margin-bottom:20px;
+    width:100%;
+}
+.simpleTable th{
+    border: 1px solid #333;
+}
+.simpleTable tr{
+    border: 1px solid #333;
+}
+.simpleTable td{
+    border: 1px solid #333;
+}
+.simpleTable .center {
+    text-align: center;
+}
+.simpleTable .right {
+    text-align: right;
+}
+.simpleTable .left {
+    text-align: left;
+}
+.simpleTable .bold {
+    font-weight: bold;
+}
+.w2 {
+    width:2%;
+}
+.w5 {
+    width:5%;
+}
+.w10 {
+    width:10%;
+}
+.w15 {
+    width:15%;
+}
+.w20 {
+    width:20%;
+}
+.w25 {
+    width:25%;
+}
+.w30 {
+    width:30%;
+}

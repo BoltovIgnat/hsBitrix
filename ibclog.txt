@@ -1,0 +1,38 @@
+Host: dev.highsystem.ru:443
+Date: 2025-04-14 08:17:34
+Module: my_module_id
+Произвольный текст сообщения
+#0: Dbbo\Agent\AgentLead::checkMailPrice
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:1
+#1: eval
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/main/admin/php_command_line.php:135
+#2: require_once(string)
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/admin/php_command_line.php:2
+----------
+Host: dev.highsystem.ru:443
+Date: 2025-04-14 08:19:24
+Module: my_module_id
+Произвольный текст сообщения
+#0: Dbbo\Agent\AgentLead::checkMailPrice
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:1
+#1: eval
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/main/admin/php_command_line.php:135
+#2: require_once(string)
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/admin/php_command_line.php:2
+----------
+Host: dev.highsystem.ru:443
+Date: 2025-04-14 09:06:58
+Strange answer from Bitrix Service! https://oauth.bitrix.info/rest/rest.check: 0 Stream timeout has been reached.
+#0: Bitrix\Rest\OAuth\Client->call
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/rest/lib/oauth/client.php:285
+#1: Bitrix\Rest\OAuth\Client->checkAuth
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/rest/lib/oauth/auth.php:254
+#2: Bitrix\Rest\OAuth\Auth::check
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/rest/lib/oauth/auth.php:72
+#3: Bitrix\Rest\OAuth\Auth::onRestCheckAuth
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/main/tools.php:5259
+#4: ExecuteModuleEventEx
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/rest/classes/general/rest_util.php:531
+#5: CRestUtil::checkAuth
+	/home/bitrix/ext_www/tesths.dbbo.ru/bitrix/modules/rest/classes/general/rest.php:615
+----------

@@ -1,0 +1,38 @@
+.crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	margin-top: 0;
+	color: #000 !important;
+	border-radius: 0 0 5px 5px;
+	padding: 5px;
+}
+.crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block {
+	padding: 5px;
+	border-radius: 5px 5px 0 0;
+	color: #000 !important;
+}
+.crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block .crm-entity-widget-client-box-position,
+.crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	color: #000 !important;
+}
+.crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block .crm-entity-widget-client-contact-phone {
+	color: #000 !important;
+}
+.bg-customer .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block,
+.bg-customer .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	background-color: #77d57e !important;
+}
+.bg-supplier .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block,
+.bg-supplier .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	background-color: #ff5f5f !important;
+}
+.bg-competitor .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block,
+.bg-competitor .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	background-color: #f5b657 !important;
+}
+.bg-partner .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block,
+.bg-partner .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	background-color: #ecf982 !important;
+}
+.bg-other .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-participants-block,
+.bg-other .crm-entity-widget-content-block-inner-container:first-child .crm-entity-widget-client-contact-custom {
+	background-color: #aaebff !important;
+}

@@ -1,0 +1,50 @@
+[data-entity="show-event"] .ui-label-danger, [data-entity="show-event"] .ui-label-danger span {
+	background-color: #ff5752;
+	border-color: #ff5752;
+	color: #fff;
+}
+[data-entity="show-event"] .ui-label-orange, [data-entity="show-event"] .ui-label-orange span {
+	background-color: #f7a700;
+	border-color: #f7a700;
+	color: #fff;
+}
+[data-entity="show-event"] .ui-label-blue, [data-entity="show-event"] .ui-label-blue span {
+	background-color: #2fc6f6;
+	border-color: #2fc6f6;
+	color: #fff;
+}
+[data-entity="show-event"] .ui-label-green, [data-entity="show-event"] .ui-label-green span {
+	background-color: #69d54e;
+	border-color: #69d54e;
+	color: #fff;
+}
+
+.crm-kanban-item-contact .company-data {
+	display: block;
+	padding: 3px 6px;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 3px;
+	font-weight: 600;
+	font-size: 12px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bg-customer {
+	background-color: #77d57e !important;
+}
+.bg-supplier {
+	background-color: #ff0000 !important;
+}
+.bg-competitor {
+	background-color: #f5b657 !important;
+}
+.bg-partner {
+	background-color: #f6f927 !important;
+	color: #000 !important;
+}
+.bg-other {
+	background-color: #42ccf7 !important;
+}

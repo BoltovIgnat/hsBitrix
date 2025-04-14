@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Dashboard";
+$arDirProperties = array(
+
+);
+?>

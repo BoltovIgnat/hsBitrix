@@ -1,0 +1,9 @@
+.field-item {
+	flex-wrap: wrap;
+}
+.suggestions-wrapper {
+	flex-basis: 100%;
+}
+body.hidden-requisite .crm-rq-org-description {
+	display: none !important;
+}

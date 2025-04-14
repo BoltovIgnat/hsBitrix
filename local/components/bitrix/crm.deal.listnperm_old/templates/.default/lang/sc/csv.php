@@ -1,0 +1,7 @@
+<?
+$MESS["CRM_COLUMN_PRODUCT_NAME"] = "产品";
+$MESS["CRM_COLUMN_PRODUCT_PRICE"] = "价格";
+$MESS["CRM_COLUMN_PRODUCT_QUANTITY"] = "数量";
+$MESS["ERROR_DEAL_IS_EMPTY"] = "当前没有可用的联系人。";
+$MESS["ERROR_DEAL_IS_EMPTY_2"] = "没有交易。";
+?>

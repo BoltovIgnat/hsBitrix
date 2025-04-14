@@ -1,0 +1,5 @@
+<?
+$MESS["CRM_DEAL_LIST_DESCRIPTION"] = "ดีล";
+$MESS["CRM_DEAL_LIST_NAME"] = "ดีล";
+$MESS["CRM_DEAL_NAME"] = "ดีล";
+?>

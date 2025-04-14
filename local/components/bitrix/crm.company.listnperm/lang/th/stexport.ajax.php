@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_COMPANY_LIST_STEXPORT_COMPLETED_SUMMARY1"] = "สร้างไฟล์ที่ส่งออกของบริษัทแล้ว";
+$MESS["CRM_COMPANY_LIST_STEXPORT_COMPLETED_SUMMARY2"] = "บริษัทได้รับการประมวลผล: #PROCESSED_ITEMS#";
+$MESS["CRM_COMPANY_LIST_STEXPORT_DOWNLOAD"] = "ดาวน์โหลดไฟล์ที่ส่งออก";
+$MESS["CRM_COMPANY_LIST_STEXPORT_PROGRESS_SUMMARY"] = "บริษัทได้รับการประมวลผล: #PROCESSED_ITEMS# จาก #TOTAL_ITEMS#";
+?>

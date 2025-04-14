@@ -1,0 +1,6 @@
+body [data-id="crm_rest_marketplace"] {
+	display: none !important;
+}
+body #crm_scope_detail_c_deal__more_button {
+	display: none !important;
+}

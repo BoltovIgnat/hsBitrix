@@ -1,0 +1,54 @@
+/* Дело: */
+body #crm_scope_timeline_c_lead__todo {
+    display: none !important;
+}
+
+/* WhatsApp: */
+body #crm_scope_timeline_c_lead__whatsapp {
+    display: none !important;
+}
+
+/* SMS: */
+body #crm_scope_timeline_c_lead__sms {
+    display: none !important;
+}
+
+/* Пригласить в чат: */
+body #crm_scope_timeline_c_lead__gotochat {
+    display: none !important;
+}
+
+/* Ждать: */
+body #crm_scope_timeline_c_lead__wait {
+    display: none !important;
+}
+
+/* Встреча: */
+body #crm_scope_timeline_c_lead__meeting {
+    display: none !important;
+}
+
+/* Звонок: */
+body #crm_scope_timeline_c_lead__call {
+    display: none !important;
+}
+
+/* Визит: */
+body #crm_scope_timeline_c_lead__visit {
+    display: none !important;
+}
+
+/* Маркет: */
+body #crm_scope_timeline_c_lead__activity_rest_applist {
+    display: none !important;
+}
+
+/* Еще: */
+body #crm_scope_timeline_c_lead__more_button {
+    display: none !important;
+}
+
+/* Создать дело: */
+body .crm-entity-stream-section-notTask {
+    display: none !important;
+}

@@ -1,0 +1,255 @@
+/* Общие стили формы фильтра */
+form#filterForm {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form#filterForm h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    white-space: nowrap;
+}
+
+form#filterForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 150px;
+}
+
+form#filterForm input, form#filterForm select, form#filterForm button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form#filterForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form#filterForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили таблицы */
+.table-wrapper {
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    overflow-x: auto; /* Добавляем горизонтальный скролл для небольших экранов */
+    margin: 0 auto;
+}
+
+.report-table {
+    width: 100%;
+    max-width: 100%; /* Убираем возможность таблице выйти за пределы экрана */
+    border-collapse: collapse;
+    table-layout: fixed; /* Фиксированная ширина столбцов */
+    margin-top: 10px;
+}
+
+.report-table th {
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.report-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden; /* Обрезка текста при переполнении */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Установка ширины столбцов */
+.report-table th:nth-child(1),
+.report-table td:nth-child(1) {
+    width: 45%; /* Сотрудник */
+}
+
+.report-table th:nth-child(2),
+.report-table td:nth-child(2) {
+    width: 10%; /* Контакт */
+}
+
+.report-table th:nth-child(3),
+.report-table td:nth-child(3) {
+    width: 10%; /* Компания */
+}
+
+.report-table th:nth-child(4),
+.report-table td:nth-child(4) {
+    width: 10%; /* Сделки */
+}
+
+.report-table th:nth-child(5),
+.report-table td:nth-child(5) {
+    width: 10%; /* Проекты */
+}
+
+.report-table th:nth-child(6),
+.report-table td:nth-child(6) {
+    width: 10%; /* Всего ошибок */
+}
+
+.report-table th:nth-child(7),
+.report-table td:nth-child(7) {
+    width: 5%; /* Подробнее */
+}
+
+/* Строка "Итого" */
+.report-table tfoot td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+/* Заголовок подразделения */
+.department-title {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Детализированная строка "Подробнее" */
+.details-row {
+    background-color: #f9f9f9;
+}
+
+.details-row td {
+    padding: 10px;
+    border: none;
+}
+
+/* Вложенная таблица в "Подробнее" */
+.documents-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.documents-table th {
+    background-color: #e7e7e7;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.documents-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.documents-table th:nth-child(1),
+.documents-table td:nth-child(1) {
+    width: 15%; /* Дата и время */
+}
+
+.documents-table th:nth-child(2),
+.documents-table td:nth-child(2) {
+    width: 15%; /* Элемент CRM */
+}
+
+.documents-table th:nth-child(3),
+.documents-table td:nth-child(3) {
+    width: 15%; /* Зафиксировал */
+}
+
+.documents-table th:nth-child(4),
+.documents-table td:nth-child(4) {
+    width: 55%; /* Комментарий */
+}
+
+/* Стили для кнопки "Подробнее" */
+.details-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f9;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.details-btn:hover {
+    background-color: #ddd;
+}
+
+.details-btn:active {
+    background-color: #ccc;
+}
+
+/* Стили для формы фильтра */
+.filter-form {
+    padding: 15px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+}
+
+.filter-group-select {
+    min-width: 180px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-button {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.filter-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-button button:hover {
+    background-color: #0056b3;
+}

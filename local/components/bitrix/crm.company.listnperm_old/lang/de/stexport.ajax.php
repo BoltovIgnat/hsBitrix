@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_COMPANY_LIST_STEXPORT_PROGRESS_SUMMARY"] = "Unternehmen verarbeitet: #PROCESSED_ITEMS# von #TOTAL_ITEMS#.";
+$MESS["CRM_COMPANY_LIST_STEXPORT_COMPLETED_SUMMARY1"] = "Exportdatei der Unternehmen wurde erstellt.";
+$MESS["CRM_COMPANY_LIST_STEXPORT_COMPLETED_SUMMARY2"] = "Unternehmen verarbeitet: #PROCESSED_ITEMS#.";
+$MESS["CRM_COMPANY_LIST_STEXPORT_DOWNLOAD"] = "Exportdatei herunterladen.";
+?>
