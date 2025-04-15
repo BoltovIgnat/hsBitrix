@@ -1,52 +1,38 @@
 <?php
+use Bitrix\Main\Page\Asset;
+
 $assetManager = \Bitrix\Main\Page\Asset::getInstance();
 $userId = $USER->getId();
 $userName = trim($USER->GetFirstName() . ' ' . $USER->GetLastName());
 
-if ($USER->IsAdmin()) {
+if (!$USER->IsAdmin()) {
+
+// Для подключения css
+    Asset::getInstance()->addCss("/local/templates/.default/components/bitrix/crm.company.list/.default/style.css");
     $assetManager->addString('
         <script>
         (function() {
             const userId = "'.$userId.'";
             const userName = "'.$userName.'";
             let isApplying = false;
-            debugger;
             
-            BX.addCustomEvent("Grid::ready", function (gridData) {
-                console.log("ibc ready"); 
-            });
             BX.addCustomEvent("Grid::ready", function(gridData) {
                 console.log("ready");
                                
                 const filter = BX.Main.filterManager.getById(gridData.containerId);
                 if (filter) safeApplyFilter(filter);
             });
-//            
-//            BX.addCustomEvent("Grid::beforeRequest", function(gridData, args) {
-//                console.log("beforeRequest");                
-//                const filter = BX.Main.filterManager.getById(args.gridId);
-//                if (filter) safeApplyFilter(filter);
-//            });
-//            
-//            BX.addCustomEvent("Grid::beforeSquaresUpdate", function (gridDate, args) {
-//                console.log("beforeSquaresUpdate");                
-//                const filter = BX.Main.filterManager.getById(args.gridId);
-//                if (filter) safeApplyFilter(filter);
-//            });
-//            
-//            BX.addCustomEvent("BX.Filter.Search:beforeSquaresUpdate", function (gridDate, args) {
-//                console.log("beforeSquaresUpdate");                
-//                const filter = BX.Main.filterManager.getById(args.gridId);
-//                if (filter) safeApplyFilter(filter);
-//            });
-//                        
-//            
-//            BX.addCustomEvent("BX.Main.Filter:beforeApply", function (gridDate, args) {
-//                console.log("beforeApply");                
-//                const filter = BX.Main.filterManager.getById(args.gridId);
-//                if (filter) safeApplyFilter(filter);
-//            });
+           
+            BX.addCustomEvent("Grid::beforeRequest", function(gridData, args) {
+                console.log("beforeRequest");                
+                const filter = BX.Main.filterManager.getById(args.gridId);
+                if (filter) safeApplyFilter(filter);
+            });
             
+            BX.addCustomEvent("BX.Main.Filter:show", function(gridData) {
+                $(`input[name="ASSIGNED_BY_ID_label"]`).attr(`disabled`, `disabled`)
+            });
+
             function safeApplyFilter(filter) {
                 console.log("Изменение фильтра");
                                 
@@ -83,11 +69,10 @@ if ($USER->IsAdmin()) {
                 }
             }
             
-            
             // Просмотр событий всех
-            BX.onCustomEvent = function(eventObject, eventName, arEventParams, secureParams) {
+            /*BX.onCustomEvent = function(eventObject, eventName, arEventParams, secureParams) {
                 console.log(eventName);
-            };
+            };*/
             
         })();
         </script>

@@ -1,0 +1,13 @@
+.main-ui-square .main-ui-square-delete{
+    display: none !important;
+}
+.main-ui-filter-search-square .main-ui-square-delete{
+    display: none !important;
+}
+.main-ui-filter-add-container{
+    display: none !important;
+}
+div[data-type="ENTITY_SELECTOR"].main-ui-filter-search-square .main-ui-square-delete{
+    display: none !important;
+}
+/*main-ui-item-icon main-ui-square-delete*/
