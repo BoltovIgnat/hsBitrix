@@ -40,20 +40,20 @@ function formatDate(date) {
 // Инициализация фильтра при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', event => {
-        console.log('Открытие формы');
+        //console.log('Открытие формы');
 
         // Проверяем, что клик был по кнопке "details-btn"
         if (event.target && event.target.classList.contains('details-btn')) {
-			console.log('Клик по details-btn');
+			//console.log('Клик по details-btn');
             const button = event.target;
             const userId = button.getAttribute('data-user-id');
-			console.log('userID', userId);
+			//console.log('userID', userId);
             const row = button.closest('tr'); // Получаем текущую строку
-			console.log('Получаем текущую строку', row);
+			//console.log('Получаем текущую строку', row);
 
             // Проверяем, существует ли раскрытая строка для документов
             const nextRow = row.nextElementSibling;
-			console.log('Проверяем наличие раскрытой строки', nextRow);
+			//console.log('Проверяем наличие раскрытой строки', nextRow);
             if (nextRow && nextRow.classList.contains('details-row')) {
                 // Если строка существует, удаляем её
                 nextRow.remove();
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Создаем строку для отображения документов
                 const detailsRow = document.createElement('tr');
-				console.log('Создаем строку', detailsRow);
+				//console.log('Создаем строку', detailsRow);
 
                 detailsRow.className = 'details-row';
                 detailsRow.innerHTML = `
@@ -87,12 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 row.insertAdjacentElement('afterend', detailsRow); // Добавляем строку после текущей
                 button.textContent = '-'; // Меняем текст кнопки
 
+                let ajaxStartDate = document.getElementById('startDate').value;
+                let ajaxEndDate = document.getElementById('endDate').value;
                 // AJAX-запрос для получения данных
-				console.log('AJAX запрос');
-				fetch(`/local/components/highsystem/documentreport/get_documents.php?USER_ID=${userId}`)
+				//console.log('AJAX запрос');
+				fetch(`/local/components/highsystem/documentreport/get_documents.php?USER_ID=${userId}&START_DATE=${ajaxStartDate}&END_DATE=${ajaxEndDate}`)
     				.then(response => response.json())
     				.then(data => {
-        				console.log('Полученные данные:', data);
+        				//console.log('Полученные данные:', data);
         				const documentsTableBody = document.getElementById(`documents-${userId}`);
         				documentsTableBody.innerHTML = ''; // Очищаем тело таблицы
 

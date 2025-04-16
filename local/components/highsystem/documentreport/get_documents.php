@@ -11,11 +11,15 @@ if (!Loader::includeModule('iblock') || !Loader::includeModule('main')) {
 
 $userId = intval($_GET['USER_ID']);
 $iblockId = 59; // ID инфоблока с документами
+$startDate = DateTime::createFromFormat('Y-m-d', $_GET['START_DATE'])->format('d.m.Y');
+$endDate = DateTime::createFromFormat('Y-m-d', $_GET['END_DATE'])->format('d.m.Y');
 
 // Получение документов по userId
 $filter = [
     'IBLOCK_ID' => $iblockId,
     'PROPERTY_275' => $userId, // Поле "Ответственный"
+    '>=DATE_CREATE' => $startDate . ' 00:00:00',
+    '<=DATE_CREATE' => $endDate . ' 23:59:59',
     'ACTIVE' => 'Y',
 ];
 

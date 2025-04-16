@@ -48,6 +48,8 @@ class HighSystemDocumentReportComponent extends CBitrixComponent
                 'DEPARTMENT' => $departmentId,
                 'DATE_PRESET' => $preset,
             ];
+            $startDate = DateTime::createFromFormat('Y-m-d', $startDate)->format('d.m.Y');
+            $endDate = DateTime::createFromFormat('Y-m-d', $endDate)->format('d.m.Y');
 
             $this->arResult['DEPARTMENTS'] = [
                 ['ID' => 32, 'NAME' => 'Отдел КАМ'],

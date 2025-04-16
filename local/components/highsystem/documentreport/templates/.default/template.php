@@ -1,10 +1,5 @@
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
-    <!-- Подключение внешнего JS -->
-    <script src="/local/components/highsystem/documentreport/templates/.default/script.js"></script>
-    <!-- Подключение внешнего CSS -->
-    <link rel="stylesheet" href="/local/components/highsystem/documentreport/templates/.default/style.css">
-
     <!-- Форма фильтра -->
     <form id="filterForm" method="GET" class="filter-form">
         <div class="filter-group filter-group-select">
