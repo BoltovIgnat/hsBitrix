@@ -11,6 +11,15 @@ $eventManager = Bitrix\Main\EventManager::getInstance();
 ); */
 
 $eventManager->addEventHandler(
+    "main",
+    "OnProlog",
+    [
+        '\Hs\Helper',
+        'AddBtn'
+    ]
+);
+
+$eventManager->addEventHandler(
     'tasks',
     '\Bitrix\Tasks\Internals\Task\SearchIndex::onAfterAdd',
     [
