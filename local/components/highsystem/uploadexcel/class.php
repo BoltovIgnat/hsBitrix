@@ -48,25 +48,75 @@ class UploadexcelComponent extends \CBitrixComponent implements \Bitrix\Main\Eng
         $requisite = new \Bitrix\Crm\EntityRequisite();
         $inn = $row[16];
         $kpp = $row[17];
+        $money = str_replace(",", "", $row[25]);
+
+        $date = new \Bitrix\Main\Type\Date($row[8]);
+
+        $res = CIBlockElement::GetList(
+            ['ID' => 'ASC'],
+            [
+                'IBLOCK_ID' => 60,
+                'PROPERTY_INN_KLIENTA' => $inn,
+                'PROPERTY_SUMMA_PRODAZHI_CHISLO' => $money,
+                'PROPERTY_DATA_DOKUMENTA_VALUE' => $date,
+            ],
+            false,
+            [],
+            ['ID', 'IBLOCK_ID', 'NAME', 'PROPERTY_DATA_DOKUMENTA']
+        );
+
+        if ($res->SelectedRowsCount() > 0){
+            return;
+        }
 
         if ($inn && $kpp) {
+            $arFilter = array(
+                "RQ_KPP" => $kpp,
+                "RQ_INN" => $inn,
+                "ENTITY_TYPE_ID" => CCrmOwnerType::Company
+            );
+        }
 
-            $rs = $requisite->getList(array(
-                "filter" => array(
-                    "RQ_KPP" => $kpp,
-                    "RQ_INN" => $inn,
-                    "ENTITY_TYPE_ID" => CCrmOwnerType::Company
-                )));
+        if (empty($kpp)){
+            $arFilter = array(
+                "RQ_INN" => $inn,
+                "ENTITY_TYPE_ID" => CCrmOwnerType::Company
+            );
+        }
 
-            while ($ar = $rs->Fetch()) {
+        $rs = $requisite->getList(array(
+            "filter" => $arFilter
+        ));
 
-                $companyId = $ar["ENTITY_ID"];
-                $assignedId = $ar["ASSIGNED_BY_ID"];
-                $nameStr = $ar["TITLE"];
-                //$reqId[] = $ar['ID'];
+        while ($ar = $rs->Fetch()) {
 
+            $companyId = $ar["ENTITY_ID"];
+            $nameStr = $ar["NAME"];
+
+        }
+
+        if (!empty($companyId)){
+            $entityResult = \CCrmCompany::GetListEx(
+                [
+                    'SOURCE_ID' => 'DESC'
+                ],
+                [
+                    'ID' => [
+                        $companyId
+                    ],
+                    'CHECK_PERMISSIONS' => 'N'
+                ],
+                false,
+                false,
+                [
+                    '*'
+                ]
+            );
+
+            while( $entity = $entityResult->fetch() )
+            {
+                $assignedId = $entity["ASSIGNED_BY_ID"];
             }
-
         }
 
         $rsCOMPETITOR = $requisite->getList(array(
@@ -83,7 +133,6 @@ class UploadexcelComponent extends \CBitrixComponent implements \Bitrix\Main\Eng
 
         }
 
-        $money = str_replace(",", "", $row[25]);
         $arFields = array(
             "ACTIVE" => "Y",
             "IBLOCK_ID" => 60,
@@ -92,15 +141,15 @@ class UploadexcelComponent extends \CBitrixComponent implements \Bitrix\Main\Eng
             //"CODE" => "nazvanie-elementa",
            // "DETAIL_TEXT" => "Описание элемента",
             "PROPERTY_VALUES" => array(
-                "INN_KLIENTA" => $row[16], //Производитель - свойство
-                "KPP_KLIENTA" => $row[17], //Артикул производителя - свойство
+                "INN_KLIENTA" => $inn,
+                "KPP_KLIENTA" => $kpp,
                 "KOMPANIYA_KLIENTA" => $companyId,
                 "NAZVANIE_KLIENTA_V_CRM" => $nameStr,
                 "OTVETSTVENNYY_ZA_KOMPANIYU" => $assignedId,
                 "SUMMA_PRODAZHI" => $money.'|RUB',
                 "SUMMA_PRODAZHI_CHISLO" => $money,
                 "DATA_DOKUMENTA" => $row[8],
-                "NOMER_UPD" => $row[6],
+                "NOMER_UPD" => $row[5],
                 "NOMER_S_F" => $row[7],
                 "INN_KONKURENTA" => $COMPETITOR_INN,
                 "KPP_KONKURENTA" => $COMPETITOR_KPP,
@@ -110,9 +159,9 @@ class UploadexcelComponent extends \CBitrixComponent implements \Bitrix\Main\Eng
         $oElement = new CIBlockElement();
 
         if($idElement = $oElement->Add($arFields, false, false, true)) {
-            AddMessage2Log(print_r('New ID: '.$idElement,1), "my_module_id");
+            //AddMessage2Log(print_r('New ID: '.$idElement,1), "my_module_id");
         } else {
-            AddMessage2Log(print_r('Error: '.$oElement->LAST_ERROR,1), "my_module_id");
+            //AddMessage2Log(print_r('Error: '.$oElement->LAST_ERROR,1), "my_module_id");
         }
     }
     public function executeComponent()

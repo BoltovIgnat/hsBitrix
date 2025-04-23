@@ -3,7 +3,7 @@
     $(".hs-excel-file").change(function() {
         filename = this.files[0].name;
         $('.ui-ctl-label-text').text(filename)
-        console.log();
+        //console.log();
     });
 
     $(document).on("click",".hs-excel-file-upload",function() {
@@ -21,7 +21,7 @@
 // промис в который прийдет ответ
         request.then(function (response) {
             BX.SidePanel.Instance.close()
-            console.log(response);
+            //console.log(response);
         });
     });
 

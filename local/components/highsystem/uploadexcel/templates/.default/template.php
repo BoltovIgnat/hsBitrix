@@ -26,7 +26,7 @@ CJSCore::Init("sidepanel");
         <div class="ui-slider-section">
             <div class="ui-slider-content-box">
                 <div class="ui-slider-heading-2">Загрузите УПД</div>
-                <p class="ui-slider-paragraph">Paragraph 1. Текст слайдера. Теперь при загрузке картинки автоматически попадают в графический редактор. Вы можете обрезать изображение до нужного размера, настроить параметры, добавить текст и стикеры</p>
+                <!--p class="ui-slider-paragraph">Paragraph 1. Текст слайдера. Теперь при загрузке картинки автоматически попадают в графический редактор. Вы можете обрезать изображение до нужного размера, настроить параметры, добавить текст и стикеры</p-->
             </div>
 
             <label class="ui-ctl ui-ctl-file-btn">

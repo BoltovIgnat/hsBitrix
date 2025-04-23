@@ -265,7 +265,7 @@ class Company
         $username = 'support1C_Bitrix';
         $password = '123';
         $data['INN'] = $reqINN;
-
+        //AddMessage2Log(print_r($data,1), "my_module_id");
         $hash = "CustomDocsForDeal_".$reqINN;
         
         if ($cache->initCache(3600, $hash, "CRMCustomDocsForDeal")) { 
@@ -294,8 +294,8 @@ class Company
                     )
                 ); 
             }
-        } 
-
+        }
+        //AddMessage2Log(print_r($curlResult,1), "my_module_id");
         $lcur = \CCurrency::GetList(($by="name"), ($order="asc"), 'ru');
         while($lcur_res = $lcur->Fetch())
         {

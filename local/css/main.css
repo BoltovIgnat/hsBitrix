@@ -1,3 +1,6 @@
 .crm-entity-stream-section-planned-task .crm-entity-stream-planned-apply-btn {
     display:none;
 }
+.page-header .hs-btn-excel{
+    display: none !important;
+}
